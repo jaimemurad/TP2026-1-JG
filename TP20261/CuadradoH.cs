@@ -18,6 +18,7 @@ public class Cuadrado : Rectangulo
     public override double Perimetro()
     {
         return 4 * BaseRectangulo;
+       
     }
     
 
