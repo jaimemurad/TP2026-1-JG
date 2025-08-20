@@ -9,11 +9,13 @@
 
   <ItemGroup>
     <Compile Remove="Cuadrado.cs" />
+    <Compile Remove="Factorial.cs" />
     <Compile Remove="Obj y Here.cs" />
   </ItemGroup>
 
   <ItemGroup>
     <None Include="Cuadrado.cs" />
+    <None Include="Factorial.cs" />
     <None Include="Obj y Here.cs" />
   </ItemGroup>
 
