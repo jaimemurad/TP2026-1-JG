@@ -8,15 +8,27 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Calculadora.cs" />
+    <Compile Remove="CalculadoraB.cs" />
+    <Compile Remove="CalculadoraC.cs" />
     <Compile Remove="Cuadrado.cs" />
+    <Compile Remove="CuadradoH.cs" />
     <Compile Remove="Factorial.cs" />
     <Compile Remove="Obj y Here.cs" />
+    <Compile Remove="persona.cs" />
+    <Compile Remove="Rectangulo.cs" />
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="Calculadora.cs" />
+    <None Include="CalculadoraB.cs" />
+    <None Include="CalculadoraC.cs" />
     <None Include="Cuadrado.cs" />
+    <None Include="CuadradoH.cs" />
     <None Include="Factorial.cs" />
     <None Include="Obj y Here.cs" />
+    <None Include="persona.cs" />
+    <None Include="Rectangulo.cs" />
   </ItemGroup>
 
 </Project>
