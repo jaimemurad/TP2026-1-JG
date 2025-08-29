@@ -8,27 +8,44 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Arreglo\Main Arreglo.cs" />
     <Compile Remove="Calculadora.cs" />
     <Compile Remove="CalculadoraB.cs" />
     <Compile Remove="CalculadoraC.cs" />
     <Compile Remove="Cuadrado.cs" />
     <Compile Remove="CuadradoH.cs" />
+    <Compile Remove="Ejercicio repaso\Auto.cs" />
+    <Compile Remove="Ejercicio repaso\MAIN AUTP.cs" />
+    <Compile Remove="Ejercicio repaso\moto.cs" />
+    <Compile Remove="Ejercicio repaso\Vehiculocs.cs" />
+    <Compile Remove="Ejercicio Suministro\MaindeSuministros.cs" />
     <Compile Remove="Factorial.cs" />
     <Compile Remove="Obj y Here.cs" />
     <Compile Remove="persona.cs" />
     <Compile Remove="Rectangulo.cs" />
+    <Compile Remove="Tarea 1\Principal.cs" />
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="Arreglo\Main Arreglo.cs" />
     <None Include="Calculadora.cs" />
     <None Include="CalculadoraB.cs" />
     <None Include="CalculadoraC.cs" />
     <None Include="Cuadrado.cs" />
     <None Include="CuadradoH.cs" />
+    <None Include="Ejercicio repaso\Auto.cs" />
+    <None Include="Ejercicio repaso\MAIN AUTP.cs" />
+    <None Include="Ejercicio repaso\moto.cs" />
+    <None Include="Ejercicio repaso\Vehiculocs.cs" />
+    <None Include="Ejercicio Suministro\MaindeSuministros.cs" />
     <None Include="Factorial.cs" />
     <None Include="Obj y Here.cs" />
     <None Include="persona.cs" />
     <None Include="Rectangulo.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Include="Tarea 1\Principal.cs" />
   </ItemGroup>
 
 </Project>
