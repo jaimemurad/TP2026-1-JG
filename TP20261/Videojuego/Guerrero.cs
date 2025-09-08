@@ -20,7 +20,7 @@
         System.Console.WriteLine($"{Nombre} ataca a {enemigo.Nombre} y le quita {danio} puntos de salud.");
     }
 
-    public void RecibirDanio(int danio)
+    public virtual void RecibirDanio(int danio)
     {
         Vida = Math.Max(Vida - danio, 0);
     }
@@ -29,4 +29,5 @@
         Console.WriteLine($"{g1.Nombre} y {g2.Nombre}  se fusionan en un nuevo guerrero.");
         return new Guerrero($"{g1.Nombre} + {g2.Nombre}", (g1.Vida + g2.Vida) /2, (g1.Ataque + g2.Ataque)/2);
     }
+
 }

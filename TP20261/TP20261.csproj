@@ -22,6 +22,8 @@
     <Compile Remove="Ejercicio Suministro\MaindeSuministros.cs" />
     <Compile Remove="Excepciones\Mainexcepciones.cs" />
     <Compile Remove="Factorial.cs" />
+    <Compile Remove="Lista\lista.cs" />
+    <Compile Remove="Lista\personaL.cs" />
     <Compile Remove="Obj y Here.cs" />
     <Compile Remove="persona.cs" />
     <Compile Remove="Rectangulo.cs" />
@@ -43,6 +45,8 @@
     <None Include="Ejercicio Suministro\MaindeSuministros.cs" />
     <None Include="Excepciones\Mainexcepciones.cs" />
     <None Include="Factorial.cs" />
+    <None Include="Lista\lista.cs" />
+    <None Include="Lista\personaL.cs" />
     <None Include="Obj y Here.cs" />
     <None Include="persona.cs" />
     <None Include="Rectangulo.cs" />
