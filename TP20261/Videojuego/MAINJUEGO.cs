@@ -1,13 +1,54 @@
 ﻿//Programa principal del juego
 
-try 
-{
-    Console.ForegroundColor = ConsoleColor.DarkMagenta;
+
+try {
     Console.WriteLine("Bienvenido al combate de guerreros!");
-}
+    //Obtener nombre del guerrero
+    string nombrejugador = ObtenerNombre();
 
-catch {
+    //Seleccionar clase del guerrero
 
+    Guerrero jugador = SeleccionarClase(nombrejugador);
+    Guerrero enemigo = GenerarEnemigo();
+
+    Console.WriteLine($"Te enfrentaras contra {enemigo.Nombre}");
+
+    while (jugador.Vida > 0 && enemigo.Vida > 0) {
+        MostrarEstado(jugador, enemigo);
+        int opcion = ObtenerOpcion();
+        if (opcion == 1) {
+            jugador.Atacar(enemigo);
+
+        } else if (opcion == 2) {
+            int probabilidad = new Random().Next(0, 100);
+            if (probabilidad < 50) {
+                Console.WriteLine($"la fusion falló y perdiste vida");
+                jugador.RecibirDanio((int)(jugador.Vida * 0.1f));
+            } else {
+
+                jugador = jugador + enemigo;
+                Console.WriteLine($"la fusion salio bien eres un nuevo guerrero {jugador.Nombre}");
+            }
+
+        } else 
+        {
+            throw new ArgumentException("Opción inválida. Debe ser 1 o 2");
+        }
+
+        if (enemigo.Vida > 0) 
+        {
+            enemigo.Atacar(jugador);
+        }
+    }
+
+    Console.WriteLine(jugador.Vida > 0 ? " Has ganado el combate." : "Perdiste...");
+
+} catch (Exception ex) {
+    Console.WriteLine($"Error inesperado: {ex.Message}");
+} 
+finally 
+{ 
+    Console.WriteLine("Gracias por jugar!");
 }
 
 static string ObtenerNombre() 
@@ -19,7 +60,7 @@ static string ObtenerNombre()
             Console.Write("Ingresa el nombre del guerrero: ");
             string nombre = Console.ReadLine()??"".Trim();
 
-            if (!string.IsNullOrEmpty(nombre)) 
+            if (string.IsNullOrEmpty(nombre)) 
             {
                 throw new ArgumentException("El nombre no puede estar vacío.");
                 //Tarea evitar que la cadena sea un numero
@@ -102,4 +143,13 @@ static Guerrero GenerarEnemigo()
     int[] ataques = { 15, 27, 22, 30, 35 }; // Ataque entre 15 y 25
     int ataque = ataques[new Random().Next(ataques.Length)];
     return new Guerrero(nombre, vida, ataque);
+}
+
+//Funcion mostrar el estado
+
+static void MostrarEstado(Guerrero jugador, Guerrero enemigo) 
+{
+   Console.WriteLine($"Tu vida : {jugador.Vida} | La vida del enemigo {enemigo.Vida}");
+    Console.WriteLine("1. Atacar");
+    Console.WriteLine("2. Fusionarse con el enemigo ");
 }
