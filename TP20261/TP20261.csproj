@@ -8,11 +8,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Animal\1animal.cs" />
+    <Compile Remove="Animal\Animal.cs" />
     <Compile Remove="Arreglo\Main Arreglo.cs" />
     <Compile Remove="Banco\inicial.cs" />
     <Compile Remove="Calculadora.cs" />
     <Compile Remove="CalculadoraB.cs" />
     <Compile Remove="CalculadoraC.cs" />
+    <Compile Remove="Casteos\casteos.cs" />
     <Compile Remove="Cuadrado.cs" />
     <Compile Remove="CuadradoH.cs" />
     <Compile Remove="Ejercicio repaso\Auto.cs" />
@@ -22,6 +25,7 @@
     <Compile Remove="Ejercicio Suministro\MaindeSuministros.cs" />
     <Compile Remove="Excepciones\Mainexcepciones.cs" />
     <Compile Remove="Factorial.cs" />
+    <Compile Remove="Interfaces\Iejemplo.cs" />
     <Compile Remove="Lista\lista.cs" />
     <Compile Remove="Lista\personaL.cs" />
     <Compile Remove="Obj y Here.cs" />
@@ -32,11 +36,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="Animal\1animal.cs" />
+    <None Include="Animal\Animal.cs" />
     <None Include="Arreglo\Main Arreglo.cs" />
     <None Include="Banco\inicial.cs" />
     <None Include="Calculadora.cs" />
     <None Include="CalculadoraB.cs" />
     <None Include="CalculadoraC.cs" />
+    <None Include="Casteos\casteos.cs" />
     <None Include="Cuadrado.cs" />
     <None Include="CuadradoH.cs" />
     <None Include="Ejercicio repaso\Auto.cs" />
@@ -46,6 +53,7 @@
     <None Include="Ejercicio Suministro\MaindeSuministros.cs" />
     <None Include="Excepciones\Mainexcepciones.cs" />
     <None Include="Factorial.cs" />
+    <None Include="Interfaces\Iejemplo.cs" />
     <None Include="Lista\lista.cs" />
     <None Include="Lista\personaL.cs" />
     <None Include="Obj y Here.cs" />
