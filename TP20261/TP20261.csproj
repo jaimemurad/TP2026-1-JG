@@ -31,6 +31,7 @@
     <Compile Remove="Lista\personaL.cs" />
     <Compile Remove="Obj y Here.cs" />
     <Compile Remove="persona.cs" />
+    <Compile Remove="POO electronicos\Lamp.cs" />
     <Compile Remove="Rectangulo.cs" />
     <Compile Remove="Tarea 1\Principal.cs" />
     <Compile Remove="Videojuego\MAINJUEGO.cs" />
@@ -60,6 +61,7 @@
     <None Include="Lista\personaL.cs" />
     <None Include="Obj y Here.cs" />
     <None Include="persona.cs" />
+    <None Include="POO electronicos\Lamp.cs" />
     <None Include="Rectangulo.cs" />
     <None Include="Videojuego\MAINJUEGO.cs" />
   </ItemGroup>
