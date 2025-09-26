@@ -11,6 +11,9 @@
     <Compile Remove="Animal\1animal.cs" />
     <Compile Remove="Animal\Animal.cs" />
     <Compile Remove="Arreglo\Main Arreglo.cs" />
+    <Compile Remove="Banco\Banco.cs" />
+    <Compile Remove="Banco\CuentaBancaria.cs" />
+    <Compile Remove="Banco\ExcepcionesBanco.cs" />
     <Compile Remove="Banco\inicial.cs" />
     <Compile Remove="Calculadora.cs" />
     <Compile Remove="CalculadoraB.cs" />
@@ -22,18 +25,29 @@
     <Compile Remove="Ejercicio repaso\MAIN AUTP.cs" />
     <Compile Remove="Ejercicio repaso\moto.cs" />
     <Compile Remove="Ejercicio repaso\Vehiculocs.cs" />
+    <Compile Remove="Ejercicio Suministro\Inventario.cs" />
     <Compile Remove="Ejercicio Suministro\MaindeSuministros.cs" />
+    <Compile Remove="Ejercicio Suministro\Suministro.cs" />
     <Compile Remove="Excepciones\Mainexcepciones.cs" />
     <Compile Remove="Factorial.cs" />
     <Compile Remove="Interfaces\Iejemplo.cs" />
     <Compile Remove="Interfaces\Iejercicio.cs" />
+    <Compile Remove="Libreria\Libro.cs" />
     <Compile Remove="Lista\lista.cs" />
     <Compile Remove="Lista\personaL.cs" />
     <Compile Remove="Obj y Here.cs" />
     <Compile Remove="persona.cs" />
     <Compile Remove="POO electronicos\Lamp.cs" />
     <Compile Remove="Rectangulo.cs" />
+    <Compile Remove="Tarea 1\Dispositivo.cs" />
+    <Compile Remove="Tarea 1\Lampara.cs" />
     <Compile Remove="Tarea 1\Principal.cs" />
+    <Compile Remove="Tarea 1\Ventilador.cs" />
+    <Compile Remove="Videojuego\Arquero.cs" />
+    <Compile Remove="Videojuego\Caballero.cs" />
+    <Compile Remove="Videojuego\Guerrero.cs" />
+    <Compile Remove="Videojuego\GuerreroSombra.cs" />
+    <Compile Remove="Videojuego\Mago.cs" />
     <Compile Remove="Videojuego\MAINJUEGO.cs" />
   </ItemGroup>
 
@@ -41,6 +55,9 @@
     <None Include="Animal\1animal.cs" />
     <None Include="Animal\Animal.cs" />
     <None Include="Arreglo\Main Arreglo.cs" />
+    <None Include="Banco\Banco.cs" />
+    <None Include="Banco\CuentaBancaria.cs" />
+    <None Include="Banco\ExcepcionesBanco.cs" />
     <None Include="Banco\inicial.cs" />
     <None Include="Calculadora.cs" />
     <None Include="CalculadoraB.cs" />
@@ -52,22 +69,45 @@
     <None Include="Ejercicio repaso\MAIN AUTP.cs" />
     <None Include="Ejercicio repaso\moto.cs" />
     <None Include="Ejercicio repaso\Vehiculocs.cs" />
+    <None Include="Ejercicio Suministro\Inventario.cs" />
     <None Include="Ejercicio Suministro\MaindeSuministros.cs" />
+    <None Include="Ejercicio Suministro\Suministro.cs" />
     <None Include="Excepciones\Mainexcepciones.cs" />
     <None Include="Factorial.cs" />
     <None Include="Interfaces\Iejemplo.cs" />
     <None Include="Interfaces\Iejercicio.cs" />
+    <None Include="Libreria\Libro.cs" />
     <None Include="Lista\lista.cs" />
     <None Include="Lista\personaL.cs" />
     <None Include="Obj y Here.cs" />
     <None Include="persona.cs" />
     <None Include="POO electronicos\Lamp.cs" />
     <None Include="Rectangulo.cs" />
+    <None Include="Tarea 1\Dispositivo.cs" />
+    <None Include="Tarea 1\Lampara.cs" />
+    <None Include="Tarea 1\Ventilador.cs" />
+    <None Include="Videojuego\Arquero.cs" />
+    <None Include="Videojuego\Caballero.cs" />
+    <None Include="Videojuego\Guerrero.cs" />
+    <None Include="Videojuego\GuerreroSombra.cs" />
+    <None Include="Videojuego\Mago.cs" />
     <None Include="Videojuego\MAINJUEGO.cs" />
   </ItemGroup>
 
   <ItemGroup>
     <Page Include="Tarea 1\Principal.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="BibliotecaDeLibros">
+      <HintPath>..\..\TCP 2026-1 JAIME\BibliotecaDeLibros\bin\Debug\net8.0\BibliotecaDeLibros.dll</HintPath>
+    </Reference>
+    <Reference Include="Extensiones Biblioteca">
+      <HintPath>..\Extensiones Biblioteca\bin\Debug\net8.0\Extensiones Biblioteca.dll</HintPath>
+    </Reference>
+    <Reference Include="ValidacionesBiblioeca">
+      <HintPath>..\ValidacionesBiblioeca\bin\Debug\net8.0\ValidacionesBiblioeca.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
