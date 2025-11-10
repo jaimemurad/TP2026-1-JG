@@ -1,0 +1,61 @@
+﻿//Diccionario 
+//Cada clave unicay esta asociada a un valor
+//No mantiennen un orden específico
+//No mantienen orden de insercion
+
+//Creacion
+Dictionary<string, int> edades = new Dictionary<string, int>();
+
+//Agregar elementos
+
+edades.Add("Ana", 25);
+edades.Add("Juan", 30);
+edades["María"] = 28; //Otra forma de agregar
+
+//Acceso
+int edadAna = edades["María"];
+Console.WriteLine(edadAna);
+
+//Verificar la existencia clave
+
+if (edades.ContainsKey("Carlos"))
+{
+    Console.WriteLine("Carlos está en el diccionario.");
+}
+
+//Intentar obtener valor
+
+if (edades.TryGetValue("Juan", out int edadBuscada))
+{
+    Console.WriteLine($"La edad de Juan es {edadBuscada}.");
+}
+
+//Recorrer diccionario
+
+foreach (KeyValuePair<string, int> kvp in edades)
+{
+    Console.WriteLine($"La edad de {kvp.Key} es {kvp.Value} años.");
+}
+
+//Solo claves
+foreach (string nombre in edades.Keys)
+{
+    Console.WriteLine(nombre);
+}
+
+
+//Solo valores
+foreach (int edad in edades.Values)
+{
+    Console.WriteLine(edad);
+}
+
+//Eliminar
+edades.Remove("Ana");
+
+foreach (int edad in edades.Values)
+{
+    Console.WriteLine(edad);
+}
+
+Dictionary < string,int[]> diccionario = new Dictionary<string,int[]>();

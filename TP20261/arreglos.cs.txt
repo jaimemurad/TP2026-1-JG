@@ -1,0 +1,47 @@
+﻿//Declaracion
+//tipo[]nombre;
+
+//Creacion e inicializacion
+
+int[] numeros = new int[5]; //declaracion, creacion e inicializacion
+string[] palabras= new string[] { "Hola", "mundo", "adios" }; //declaracion, creacion e inicializacion
+
+//Acceso a los elementos
+
+int primerNumero = numeros[0]; //Acceder al primer elemento
+palabras[1] = "universo"; //Modificar el segundo elemento
+
+//Arrays multidimensionales
+
+//Matriz 2D (filas y columnas)
+
+int[,] matriz = new int[3, 3]; //declaracion, creacion e inicializacion
+int[,] matrizInicializada = { {  1, 2, 3}, {4, 5, 6}, {7, 8, 9} }; //declaracion, creacion e inicializacion
+
+//Acceso
+
+int valor = matrizInicializada[1, 2]; //Acceder al elemento en la fila 1, columna 2
+Console.WriteLine(valor);
+
+//Arreglo de arreglos (jagged array)
+
+//Arreglo de 3 elementos siempre del mismo tipo
+
+int[][] jaggedArray = new int[3][]; //declaracion y creacion
+
+//Asignar elementos
+
+jaggedArray[0] = new int[] { 1, 2 };
+jaggedArray[1] = new int[] { 3, 4, 5 };
+jaggedArray[2] = new int[] { 6 };
+
+//Accedemos a los elementos
+
+for (int i = 0; i < jaggedArray.Length; i++)
+{
+    Console.WriteLine($"Fila " +i +":");
+    for (int j = 0; j < jaggedArray[i].Length; j++)
+    {
+        Console.WriteLine(jaggedArray[i][j]+" ");
+    }
+}

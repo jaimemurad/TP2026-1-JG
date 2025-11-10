@@ -1,0 +1,40 @@
+﻿//Cola (queue)
+
+//FIFO (First In First Out) data structure
+
+//Solo se puede acceder al primer elemento
+//No permite busquedas
+
+
+//Creacion
+
+Queue<string> cola = new Queue<string>();
+
+//Añadir elementos (Enqueue)
+
+cola.Enqueue("Elemento 1");
+cola.Enqueue("Elemento 2");
+cola.Enqueue("Elemento 3");
+
+foreach (string elemento in cola)
+{
+    Console.WriteLine(elemento);
+}
+
+//Sacar elementos (Dequeue)
+
+string primerElemento = cola.Dequeue(); // Elimina y devuelve "Elemento 1"
+
+foreach (string elemento in cola)
+{
+    Console.WriteLine(elemento);
+}
+
+string frontal = cola.Peek(); // Devuelve "Elemento 2" sin eliminarlo
+
+Console.WriteLine("Peej del primerl elemento");
+
+foreach (string elemento in cola)
+{
+    Console.WriteLine(elemento);
+}
